@@ -7,7 +7,7 @@ surface: "agent"
 model: "claude-4.6"
 feature: "001-todo-console-app"
 branch: "001-todo-console-app"
-user: "hasanrafay"
+user: "Muhammad Tamjeed"
 command: "/sp.implement"
 labels: ["implementation","sdd-ri"]
 links:
