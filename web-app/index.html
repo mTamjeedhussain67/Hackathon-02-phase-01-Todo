@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A beautiful, modern todo application with local storage persistence">
+    <meta name="author" content="Muhammad Tamjeed Hussain">
+    <title>Todo App - Phase I</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle theme">
+            🌙
+        </button>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>✨ Todo App</h1>
+            <p>Organize your tasks beautifully</p>
+            <p class="author">Created by <strong>Muhammad Tamjeed Hussain</strong></p>
+        </header>
+
+        <!-- Main Card -->
+        <main class="card">
+            <!-- Input Form -->
+            <form id="todoForm" class="input-group">
+                <div class="input-wrapper">
+                    <input type="text" id="todoInput" class="todo-input" placeholder="What needs to be done?"
+                        autocomplete="off" required>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <span>Add Task</span>
+                </button>
+            </form>
+
+            <!-- Todo List -->
+            <ul id="todoList" class="todo-list">
+                <!-- Todo items will be dynamically inserted here -->
+            </ul>
+
+            <!-- Empty State -->
+            <div id="emptyState" class="empty-state" style="display: none;">
+                <div class="empty-state-icon">📝</div>
+                <p class="empty-state-text">No tasks yet. Add one to get started!</p>
+            </div>
+
+            <!-- Stats -->
+            <div id="stats" class="stats" style="display: none;">
+                <div class="stat-item">
+                    <span>Total:</span>
+                    <span class="stat-number" id="totalTasks">0</span>
+                </div>
+                <div class="stat-item">
+                    <span>Completed:</span>
+                    <span class="stat-number" id="completedTasks">0</span>
+                </div>
+                <div class="stat-item">
+                    <span>Remaining:</span>
+                    <span class="stat-number" id="remainingTasks">0</span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
